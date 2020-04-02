@@ -1,0 +1,250 @@
+@font-face {
+    src: url(fonts/OpenSans-Regular.woff);
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    src: url(fonts/OpenSans-Bold.woff);
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.welcome {
+    background-image: url(../images/football_767.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;    
+}
+
+.welcome::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0a0e34;
+    opacity: 0.9;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.surface-logo {
+    fill: #ffffff;
+    width: 135px;
+    height: 38px;
+    
+}
+
+.logo .surface-logo {
+    margin-bottom: 135px;
+}
+
+main {
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+
+h1 {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 33.6px;
+    margin-bottom: 85px;
+}
+
+.download-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button {
+    text-transform: uppercase;
+    width: 280px;
+    height: 35px;
+    background-color: #5e42b0;
+    color: #ffffff;
+    margin-top: 14px;
+    border-radius: 17px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .apple-icon {
+    width: 20px;
+    height: 24px;
+    fill: #ffffff;
+    margin-right: 9px;
+  }
+  
+  .google-icon {
+    width: 22px;
+    height: 24px;
+    fill: #ffffff;
+    margin-right: 9px;
+  }
+  
+  .download-already {
+    font-size: 8px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+  
+  .store-name {
+    font-size: 8px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  
+  a div {
+    text-align: start;
+  }
+
+
+h2 {
+    font-size: 50px;
+    color: #e7e7e7;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+h3 {
+    font-size: 23px;
+    letter-spacing: 1px;
+    color: #c1c1c1;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.number {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000000;
+    font-weight: 700;
+    
+}
+
+.number::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #5e42b0;
+}
+
+.header p {
+    width: 280px;
+    height: 108px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 400;
+}
+
+
+.footer {
+    background-image: url(../images/game_767.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.footer::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0a0e34;
+    opacity: 0.9;
+}
+
+.footer_container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    fill: #ffffff;
+    width: 60px;
+    height: 50px;
+    background-image: linear-gradient(0deg, #50329c 0%, #5e3db3 51%, #7751db 100%);
+    border-radius: 17px;
+    text-align: center;
+    padding: 12px 7px;
+    margin-bottom: 50px;
+}
+
+.download-text {
+    margin-bottom: 75px;
+}
+
+.download-text h3 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.download-text p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #9b8ec1;
+    font-weight: 400;
+}
+
+.footer_container .surface-logo {
+    margin-top: 82px;
+}
