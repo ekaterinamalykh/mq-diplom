@@ -386,11 +386,15 @@ p {
     position: relative;
   }
 
+  .first-part {
+    position: relative;
+  }
+
   .sports-image {
     position: absolute;
     left:-150px;
     z-index: 2;
-    top: 110vh;
+    top: 30px;
   }
 
   .first-part h2 {
@@ -453,10 +457,15 @@ p {
     font-size: 16px;
   }
 
+  .second-part {
+    position: relative;
+  }
+
   .sports-image-two {
     position: absolute;
     right: 0;
     z-index: 2;
+    top: -40px;
   }
 
   .second-part article {
@@ -504,19 +513,18 @@ p {
 
   .footer-logo {
     fill: #ffffff;
-    width: 130px;
-    height: 135px;
+    width: 106px;
+    height: 87px;
     background-image: linear-gradient(
       0deg,
       #50329c 0%,
       #5e3db3 51%,
       #7751db 100%
     );
-    border-radius: 17px;
+    border-radius: 35px;
     text-align: center;
-    padding: 24px 12px;
+    padding: 24px 12px 26px 12px;
     margin-top: 125px;
-    box-sizing: content-box;
   }
 
   .download-text h3 {
@@ -599,6 +607,12 @@ p {
 
   h2 {
     font-size: 80px;
+    margin-top: 118px;
+    margin-bottom: 110px;
+  }
+
+  .first-part {
+    position: relative;
   }
 
   .first-part h2 {
@@ -610,6 +624,7 @@ p {
     position: absolute;
     z-index: 2;
     left: 10vw;
+    top: 0;
   }
 
   .first-part-articles {
@@ -625,6 +640,7 @@ p {
     position: relative;
     left: 50vw;
     width: 50vw;
+    padding-right: 10vw;
   }
 
   .first-part article,
@@ -659,11 +675,37 @@ p {
 
   p {
     font-size: 20px;
+    line-height: 24px;
+  }
+
+  .second-part {
+    position: relative;
+  }
+
+  .sports-image-two {
+    position: absolute;
+    z-index: 2;
+    top: -40px;
+    right: 20px;
+  }
+
+  .second-part h2 {
+    padding-left: 10vw;
+  }
+
+  .second-part-articles h3 {
+    padding-left: 10vw;
   }
 
   .second-part article:nth-of-type(n + 3) {
     padding-top: 60px;
     padding-bottom: 55px;
+    margin-bottom: 0;
+  }
+
+  .second-part-articles p {
+    width: 50vw;
+    padding-left: 10vw;
   }
 
   .third-part-article {
@@ -671,19 +713,36 @@ p {
     margin: 0;
   }
 
+  .third-part .third-part-article {
+    margin-bottom: 0;
+  }
+
+  /* .third-part .third-part-article:nth-of-type(n+2) {
+    padding-bottom: 190px;
+  } */
+
+  .third-part .third-part-article:nth-of-type(n+3) {
+    margin-bottom: 0;
+  }
+
   .header-and-text {
     flex-direction: column;
     width: 50vw;
-    margin-left: 120px;
+    padding-left: 126px;
+    padding-right: 190px;
+    padding-top: 260px;
   }
 
   .full-screen-image {
     width: 50vw;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .third-part h3 {
     font-size: 80px;
     line-height: 60px;
+    margin-bottom: 118px;
   }
 
   .third-part p {
@@ -692,25 +751,37 @@ p {
     line-height: 28px;
   }
 
+  .header-and-text .reverse {
+    position: relative;
+    left: 0;
+    margin-bottom: 280px;
+  }
+
+  .reverse-picture {
+    position: absolute;
+    right: 0;
+  }
+
+
   .footer {
     background-image: url(../images/game_1280.jpg);
   }
 
+
   .footer-logo {
     fill: #ffffff;
-    width: 130px;
-    height: 135px;
+    width: 106px;
+    height: 87px;
     background-image: linear-gradient(
       0deg,
       #50329c 0%,
       #5e3db3 51%,
       #7751db 100%
     );
-    border-radius: 17px;
+    border-radius: 35px;
     text-align: center;
-    padding: 24px 12px;
+    padding: 24px 12px 26px 12px;
     margin-top: 125px;
-    box-sizing: content-box;
   }
 
   .download-text h3 {
@@ -869,19 +940,18 @@ p {
 
   .footer-logo {
     fill: #ffffff;
-    width: 130px;
-    height: 135px;
+    width: 106px;
+    height: 87px;
     background-image: linear-gradient(
       0deg,
       #50329c 0%,
       #5e3db3 51%,
       #7751db 100%
     );
-    border-radius: 17px;
+    border-radius: 35px;
     text-align: center;
-    padding: 24px 12px;
+    padding: 24px 12px 26px 12px;
     margin-top: 125px;
-    box-sizing: content-box;
   }
 
   .download-text h3 {
