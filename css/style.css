@@ -549,7 +549,7 @@ p {
   }
 }
 
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
   .welcome {
     background-image: url(../images/football_1920.jpg);
   }
@@ -617,14 +617,14 @@ p {
 
   .first-part h2 {
     position: relative;
-    left: 50vw;
+    padding-left: 50vw;
   }
 
   .sports-image {
     position: absolute;
     z-index: 2;
-    left: 10vw;
     top: 0;
+    right: 50%;
   }
 
   .first-part-articles {
@@ -633,13 +633,12 @@ p {
 
   .first-part-articles h3 {
     position: relative;
-    left: 50vw;
+    padding-left: 50vw;
   }
 
   .first-part-articles p {
     position: relative;
-    left: 50vw;
-    width: 50vw;
+    padding-left: 50vw;
     padding-right: 10vw;
   }
 
@@ -680,13 +679,14 @@ p {
 
   .second-part {
     position: relative;
+    overflow: hidden;
   }
 
   .sports-image-two {
     position: absolute;
     z-index: 2;
-    top: -40px;
-    right: 20px;
+    top: 0;
+    left: 40%;
   }
 
   .second-part h2 {
@@ -717,20 +717,17 @@ p {
     margin-bottom: 0;
   }
 
-  /* .third-part .third-part-article:nth-of-type(n+2) {
-    padding-bottom: 190px;
-  } */
-
   .third-part .third-part-article:nth-of-type(n+3) {
     margin-bottom: 0;
   }
 
   .header-and-text {
     flex-direction: column;
-    width: 50vw;
-    padding-left: 126px;
-    padding-right: 190px;
-    padding-top: 260px;
+    width: 50%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 
   .full-screen-image {
@@ -742,7 +739,8 @@ p {
   .third-part h3 {
     font-size: 80px;
     line-height: 60px;
-    margin-bottom: 118px;
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
 
   .third-part p {
@@ -751,10 +749,10 @@ p {
     line-height: 28px;
   }
 
-  .header-and-text .reverse {
+  .reverse {
     position: relative;
     left: 0;
-    margin-bottom: 280px;
+    margin-bottom: 15%;
   }
 
   .reverse-picture {
@@ -810,168 +808,8 @@ p {
   .welcome {
     background-image: url(../images/football_1920.jpg);
   }
-  .surface-logo {
-    width: 191px;
-    height: 53px;
-  }
-
-  h1 {
-    font-size: 90px;
-    letter-spacing: 5px;
-    line-height: 108px;
-  }
-
-  .download-buttons {
-    display: flex;
-    flex-direction: row;
-  }
-
-  a {
-    width: 311px;
-    height: 77px;
-    border-radius: 38px;
-    background-color: #5e42b0;
-  }
-
-  .apple-button {
-    margin-right: 50px;
-  }
-
-  .apple-icon {
-    width: 40px;
-    height: 48px;
-    margin-right: 26px;
-  }
-
-  .google-icon {
-    width: 40px;
-    height: 50px;
-    margin-right: 29px;
-  }
-
-  .download-already {
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 16.8px;
-    font-weight: 400;
-  }
-
-  .store-name {
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 16.8px;
-    font-weight: 700;
-  }
-
-  h2 {
-    font-size: 80px;
-  }
-
-  .first-part article,
-  .second-part article {
-    margin-bottom: 110px;
-  }
-
-  .first-part article:nth-of-type(n + 2),
-  .second-part article:nth-of-type(n + 2) {
-    margin-bottom: 55px;
-  }
-
-  .first-part article:nth-of-type(n + 3) {
-    padding-top: 60px;
-    padding-bottom: 55px;
-  }
-
-  h3 {
-    font-size: 36px;
-    letter-spacing: 2px;
-  }
-
-  .number {
-    font-size: 18px;
-  }
-
-  .number::after {
-    width: 19px;
-    height: 5px;
-    border-radius: 2px;
-  }
-
-  p {
-    font-size: 20px;
-  }
-
-  .second-part article:nth-of-type(n + 3) {
-    padding-top: 60px;
-    padding-bottom: 55px;
-  }
-
-  .third-part-article {
-    display: flex;
-    margin: 0;
-  }
-
-  .header-and-text {
-    flex-direction: column;
-    width: 50vw;
-    margin-left: 120px;
-  }
-
-  .full-screen-image {
-    width: 50vw;
-  }
-
-
-
-  .third-part h3 {
-    font-size: 80px;
-    line-height: 60px;
-  }
-
-  .third-part p {
-    font-size: 24px;
-    letter-spacing: 1px;
-    line-height: 28px;
-  }
-
+  
   .footer {
     background-image: url(../images/game_1920.jpg);
-  }
-
-  .footer-logo {
-    fill: #ffffff;
-    width: 106px;
-    height: 87px;
-    background-image: linear-gradient(
-      0deg,
-      #50329c 0%,
-      #5e3db3 51%,
-      #7751db 100%
-    );
-    border-radius: 35px;
-    text-align: center;
-    padding: 24px 12px 26px 12px;
-    margin-top: 125px;
-  }
-
-  .download-text h3 {
-    font-size: 80px;
-    letter-spacing: 4px;
-    padding-right: 0;
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .download-text p {
-    font-size: 30px;
-    color: #a496ca;
-    padding-right: 0;
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .footer .surface_logo {
-    width: 190px;
-    height: 25px;
   }
 }
