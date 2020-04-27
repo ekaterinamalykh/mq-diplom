@@ -452,7 +452,7 @@ p {
     height: 5px;
     border-radius: 2px;
   }
-
+  
   p {
     font-size: 16px;
   }
@@ -493,12 +493,35 @@ p {
   .third-part h3 {
     font-size: 80px;
     line-height: 60px;
+    position: relative;
   }
 
   .third-part p {
     font-size: 24px;
     letter-spacing: 1px;
     line-height: 28px;
+  }
+
+  .square {
+    position: absolute;
+    width: 116px;
+    height: 116px;
+    background-color: #5e42b0;
+    top: -150px;
+  }
+
+  .third-part .number {
+    font-size: 24px;
+    color: #f5f6f7;
+    position: absolute;
+    top: -135px;
+    z-index: 2;
+    left: 45px;
+  }
+
+  .third-part .number::after {
+    width: 25px;
+    background-color: #8f7bc8;
   }
 
   .full-screen-image {
@@ -730,6 +753,39 @@ p {
     padding-bottom: 5%;
   }
 
+  .third-part h3 {
+    position: relative;
+  }
+
+  .square {
+    position: absolute;
+    width: 168px;
+    height: 155px;
+    background-color: #5e42b0;
+    right: 40vw;
+  }
+
+  .third-part .number {
+    font-size: 24px;
+    color: #f5f6f7;
+    position: absolute;
+    z-index: 2;
+    right: 45vw;
+  }
+
+  .third-part .number::after {
+    width: 24px;
+    background-color: #8f7bc8;
+  }
+
+  .reverse .square {
+    left: 40vw;
+  }
+
+  .reverse .number {
+    left: 45vw;
+  }
+
   .full-screen-image {
     width: 50vw;
     margin-top: 0;
@@ -750,14 +806,11 @@ p {
   }
 
   .reverse {
-    position: relative;
-    left: 0;
-    margin-bottom: 15%;
+    order: 1;
   }
 
   .reverse-picture {
-    position: absolute;
-    right: 0;
+    order: 2;
   }
 
 
