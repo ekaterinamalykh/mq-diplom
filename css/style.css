@@ -238,6 +238,7 @@ p {
   font-size: 28px;
   line-height: 34px;
   color: #e7e7e7;
+  position: relative;
 }
 
 .third-part p {
@@ -248,6 +249,26 @@ p {
 .full-screen-image {
   max-width: 100%;
   margin-bottom: 35px;
+}
+
+.square {
+  position: absolute;
+  padding: 35px 35px 35px 35px;
+  background-color: #5e42b0;
+  bottom: 180%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.third-part .number {
+  font-size: 14px;
+  color: #f5f6f7;
+}
+
+.third-part .number::after {
+  background-color: #8f7bc8;
 }
 
 .footer {
@@ -399,7 +420,7 @@ p {
 
   .first-part h2 {
     position: relative;
-    left: 50vw;
+    padding-left: 50vw;
   } 
 
   .first-part article {
@@ -412,14 +433,13 @@ p {
   }
 
   .first-part-articles h3 {
-    left: 50vw;
+    padding-left: 50vw;
     position: relative;
   }
 
   .first-part-articles p {
-    width: 50vw;
     position: relative;
-    left: 50vw;
+    padding-left: 50vw;
     padding-right: 32px;
   }
 
@@ -504,19 +524,18 @@ p {
 
   .square {
     position: absolute;
-    width: 116px;
-    height: 116px;
+    padding: 58px 58px 58px 58px;
     background-color: #5e42b0;
     top: -150px;
+    width: 116px;
+    height: 116px;
+    display: flex;
+    align-items: center;
   }
 
   .third-part .number {
     font-size: 24px;
     color: #f5f6f7;
-    position: absolute;
-    top: -135px;
-    z-index: 2;
-    left: 45px;
   }
 
   .third-part .number::after {
@@ -762,15 +781,18 @@ p {
     width: 168px;
     height: 155px;
     background-color: #5e42b0;
-    right: 40vw;
+    padding: 77.5px 84px 77.5px 84px;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: -7%;
+    transform: translate(-50%, -50%);
   }
 
   .third-part .number {
     font-size: 24px;
     color: #f5f6f7;
-    position: absolute;
-    z-index: 2;
-    right: 45vw;
+    line-height: 34px;
   }
 
   .third-part .number::after {
@@ -779,17 +801,23 @@ p {
   }
 
   .reverse .square {
-    left: 40vw;
+    left: 107%;
   }
 
-  .reverse .number {
-    left: 45vw;
+  .third-part-pictures {
+    width: 50%;
   }
 
+  .third-part-article:nth-of-type(even) .third-part-pictures {
+    order: 2;
+  }
+  
   .full-screen-image {
-    width: 50vw;
+    /* width: 50vw; */
     margin-top: 0;
     margin-bottom: 0;
+    display: block;
+    width: 100%;
   }
 
   .third-part h3 {
@@ -809,9 +837,9 @@ p {
     order: 1;
   }
 
-  .reverse-picture {
+  /* .reverse-picture {
     order: 2;
-  }
+  } */
 
 
   .footer {
